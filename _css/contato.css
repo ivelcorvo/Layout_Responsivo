@@ -1,0 +1,23 @@
+fieldset{
+    border: 1px solid #969696;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    padding: 20px;
+}
+
+.campo{
+    width: 100%;
+    height: 30px;
+}
+
+/*===============================*/
+
+fieldset .btn{
+    padding: 5px 20px;
+    background-color: steelblue;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}

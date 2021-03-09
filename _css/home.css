@@ -1,0 +1,70 @@
+/* =============================================================== */
+.flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item{
+    width: 32%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.card-item:hover{
+    opacity: 0.5;
+}
+
+/* =============================================================== */
+.flex-promocoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-promocoes{
+    width: 32%;
+    margin-bottom: 10px;    
+    border: 1px solid #000000;
+    background-color: #fff;;
+    transition: 0.5s;
+    
+}
+
+.item-promocoes:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*====================================================================================*/
+/*                  MEDIA QUERIE                                                      */
+
+@media only screen and (max-width: 1000px){
+    .card-item{
+        width: 49%;
+    }
+    /*------------------*/
+    .item-promocoes{
+        width: 49%
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .flex-card{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 100%;
+    }
+    /*------------------*/
+    .flex-promocoes{
+        flex-direction: column;
+    }
+    .item-promocoes{
+        width: 100%;
+    }
+}
