@@ -14,21 +14,32 @@
     </head>
     <body>
         <header>
-            <nav>                
-            <!-- menu desktop -->
+            <nav>                            
                 <div class="nav-wrapper">
-                   <!-- <img src='_img/logo.png' class="logo"> -->
+                    <!-- menu desktop -->
+                    <!-- <img src='_img/logo.png' class="logo"> -->
                     <ul class="menu-desktop">
-                        <li><a href="index.html">HOME</a></li>
+                        <li class="home">
+                            <a href="index.html">HOME</a>
+                            <ul class="menu-desktop-sub">
+                                <li><a href="destaques.html">DESTAQUES</a></li>
+                                <li><a href="cursos-promocionais.html">PROMOCIONAIS</a></li>
+                            </ul>
+                        </li>
                         <li><a href="contato.html">CONTATO</a></li>
                         <li><a href="quem-somos.html">QUEM-SOMOS</a></li>
-                    </ul>                    
-                                
-            <!-- menu aparelhos movel -->            
+                    </ul>                                                                
+                    <!-- menu aparelhos movel -->                                
                     <label class="lbl-menu-movel" for="check">&#8801;</label>
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check"> 
                     <ul class="menu-movel">
-                        <li><a href="index.html">HOME</a></li>
+                        <li class="home-movel">
+                            <a href="index.html">HOME</a>
+                            <ul class="menu-movel-sub">
+                                <li><a href="destaques.html">DESTAQUES</a></li>
+                                <li><a href="cursos-promocionais.html">PROMOCIONAIS</a></li>
+                            </ul>
+                        </li>
                         <li><a href="contato.html">CONTATO</a></li>
                         <li><a href="quem-somos.html">QUEM-SOMOS</a></li>                                      
                     </ul>
@@ -41,10 +52,12 @@
         </div>
 
         <div class="row">
-            <div class="titulo txt-center top">Destaques</div>
+            <div class="titulo txt-center top">                
+                <a href="destaques.html" style="color: steelblue;">Destaques</a><!-- link -->
+            </div>
         </div>
 
-        <div class="row conteiner">
+        <div class="row conteiner top">
             <section class="flex-card">
             
                 <!-- artigo 1 -->
@@ -150,7 +163,7 @@
         <hr class="conteiner top">
         <div class="row">
             <div class="titulo txt-center top">
-                <a href="#" style="color:steelblue;">Cursos Promocionais</a>
+                <a href="cursos-promocionais.html" style="color:steelblue;">Cursos Promocionais</a>
             </div>
         </div>
 

@@ -14,21 +14,32 @@
     </head>
     <body>
         <header>
-            <nav>                
-                <!-- menu desktop -->
-                <div class="nav-wrapper conteiner menu-flex">
+            <nav>                            
+                <div class="nav-wrapper">
+                    <!-- menu desktop -->
                     <!-- <img src='_img/logo.png' class="logo"> -->
                     <ul class="menu-desktop">
-                        <li><a href="index.html">HOME</a></li>
+                        <li class="home">
+                            <a href="index.html">HOME</a>
+                            <ul class="menu-desktop-sub">
+                                <li><a href="destaques.html">DESTAQUES</a></li>
+                                <li><a href="cursos-promocionais.html">PROMOCIONAIS</a></li>
+                            </ul>
+                        </li>
                         <li><a href="contato.html">CONTATO</a></li>
                         <li><a href="quem-somos.html">QUEM-SOMOS</a></li>
-                    </ul>                    
-                                
-                <!-- menu aparelhos movel -->            
+                    </ul>                                                                
+                    <!-- menu aparelhos movel -->                                
                     <label class="lbl-menu-movel" for="check">&#8801;</label>
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check"> 
                     <ul class="menu-movel">
-                        <li><a href="index.html">HOME</a></li>
+                        <li class="home-movel">
+                            <a href="index.html">HOME</a>
+                            <ul class="menu-movel-sub">
+                                <li><a href="destaques.html">DESTAQUES</a></li>
+                                <li><a href="cursos-promocionais.html">PROMOCIONAIS</a></li>
+                            </ul>
+                        </li>
                         <li><a href="contato.html">CONTATO</a></li>
                         <li><a href="quem-somos.html">QUEM-SOMOS</a></li>                                      
                     </ul>
@@ -37,12 +48,12 @@
         </header>
 
         <div class="banner">
-            <img src="_img/banner-desktop2.jpg"  alt="banner" class="img-responsivo">
+            <img src="_img/banner-desktop2.jpeg"  alt="banner" class="img-responsivo">
         </div>
 
-        <div class="row">
+        <div class="row margin">
             <form action="" method="post">
-                <fieldset class="conteiner top">
+                <fieldset class="conteiner">
                     <legend><span class="titulo">DADOS PESSOAIS</span></legend>
                     
                     <label for="nome">Nome:</label>

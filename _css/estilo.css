@@ -5,6 +5,10 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+body{
+    background-color: #fff;
+}
+/*====================================================================================*/
 
 .conteiner{
     width: 70%;
