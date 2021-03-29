@@ -1,3 +1,10 @@
+:root{
+    --corFundo: #fff;
+    --corPadrao: steelblue;
+    --corPalavra1: #fff;
+    --corPalavra2: #000000; 
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +12,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-body{
-    background-color: #fff;
-}
+
 /*====================================================================================*/
 
 .conteiner{
@@ -33,17 +38,23 @@ body{
     font-size: 30px;
 }
 .top{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .linha{
-    color: steelblue;
+    background-color: var(--corPadrao);
+}
+
+.padding{
+    /* está  deixando uma pequena s margem branca abixo do banner (preciso arrumar isso) */
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /*==============================*/
 /*            FOOTER            */
 footer{
-    background-color: steelblue;
+    background-color: var(--corPadrao);
 }
 
 .flex-footer{
@@ -57,7 +68,7 @@ footer{
 }
 
 .flex-footer p{
-    color: #fff;
+    color: var(--corPalavra1);
 }
 
 /*====================================================================================*/
@@ -73,4 +84,46 @@ footer{
     .conteiner{
         width: 95%;
     }
+}
+
+/*====================================================================================*/
+/*                  DARK MODE                                                        */
+#ativar-dark{
+    display: none;  
+}
+
+.lbl-dark{
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 2.5px 5px;
+    border-radius: 20px;
+    background-color: #363636;
+    cursor: pointer;
+}
+
+.lbl-dark span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+#ativar-dark:checked ~ .lbl-dark span{
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+/* ----------------------------- */
+.dark{
+    --darkCorFundo: #363636;
+    --darkcorPalavra2: #fff;
+}
+
+#ativar-dark:checked ~ .dark{
+    background-color: var(--darkCorFundo);
 }

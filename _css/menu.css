@@ -1,8 +1,16 @@
+:root{
+    --corPadrao: steelblue;
+    --corSubMenu: rgb(45, 149, 235);
+    --corPalavra: #fff;
+    --corSubMenuHover: #000000;
+}
+
+/*====================================================================================*/
 .nav-wrapper{
     width: 100%;
     height: 50px;
     line-height: 50px;
-    background-color: steelblue;
+    background-color: var(--corPadrao);
     position: relative;
 }
 
@@ -19,13 +27,14 @@
 }
 
 .menu-desktop li{
+    width: 200px;
     text-align: center;
 }
 
 .menu-desktop li a{
     height: 50px;
     text-decoration: none;
-    color: #fff;
+    color: var(--corPalavra);
     display: block;
     padding: 0 20px 0;
 }
@@ -38,7 +47,8 @@
 /*       SUB-MENU          */
 
 ul.menu-desktop-sub{
-    background-color: rgb(45, 149, 235);
+    list-style-type: none;
+    background-color: var(--corSubMenu);
     display: none;
 }
 li.home:hover ul.menu-desktop-sub{
@@ -63,7 +73,7 @@ ul.menu-movel{
 ul.menu-movel li{
     width: 100%;
     text-align: left;
-    background-color: steelblue;
+    background-color: var(--corPadrao);
 }
 
 ul.menu-movel li a{
@@ -85,16 +95,21 @@ ul.menu-movel li a:hover{
 /*=========================*/
 /*       SUB-MENU          */
 ul.menu-movel-sub{
+    list-style-type: none;
+    float: right; 
+    position: absolute;
+    left: 35%;
+    top: 50px;  
     display: none;
-    
 }
+
 ul.menu-movel-sub li{
-    background-color: rgb(45, 149, 235);
+    width: 200px;
+    background-color: var(--corSubMenu);
 }
 
 li.home-movel:hover ul.menu-movel-sub{
-    display:block;
-    
+    display:block;    
 }
 
 /*====================================================================================*/
@@ -104,10 +119,10 @@ ul.menu-footer {
 }
 ul.menu-footer li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--corPalavra);
 }
 ul.menu-footer li a:hover{
-    color: #000000;
+    color: var(--corSubMenuHover);
 }
 
 /*====================================================================================*/

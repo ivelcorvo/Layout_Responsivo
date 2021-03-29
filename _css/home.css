@@ -1,3 +1,9 @@
+:root{
+    --corPalavra: #000000; 
+    --corFundo: #fff;
+    --corBorda: #000000;
+}
+
 /* =============================================================== */
 .flex-card{
     display: flex;
@@ -9,7 +15,7 @@
     width: 32%;
     height: auto;
     margin-bottom: 10px;
-    border: 1px solid #000000;
+    border: 1px solid var(--corBorda);
     padding: 10px;
 }
 
@@ -27,8 +33,7 @@
 .item-promocoes{
     width: 32%;
     margin-bottom: 10px;    
-    border: 1px solid #000000;
-    background-color: #fff;;
+    border: 1px solid var(--corBorda);
     transition: 0.5s;
     
 }
@@ -68,3 +73,42 @@
         width: 100%;
     }
 }
+
+/* ================================================================ */
+/* dark mode */
+.dark{
+    --DarkCorFundo: #363636;
+    --darkCorBorda: #fff;
+    --darkCorPalavra: #fff;    
+}
+
+/* --------------------------------------- */
+#ativar-dark:checked ~ .dark .card-item{
+    border: 1px solid var(--darkCorBorda);
+}
+
+#ativar-dark:checked ~ .dark .card-item p{
+    color: var(--darkCorPalavra);
+}
+#ativar-dark:checked ~ .dark .card-item span {
+    color: var(--darkCorPalavra);
+}
+
+/* --------------------------------------- */
+#ativar-dark:checked ~ .dark section p{
+    color: var(--darkCorPalavra);
+}
+
+#ativar-dark:checked ~ .dark section span{
+    color: var(--darkCorPalavra);
+}
+
+/* --------------------------------------- */
+#ativar-dark:checked ~ .dark .item-promocoes {
+    border: 1px solid var(--darkCorBorda);    
+}
+
+#ativar-dark:checked ~ .dark .item-promocoes figcaption{
+    color: var(--darkCorPalavra);
+}
+

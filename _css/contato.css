@@ -1,14 +1,14 @@
+:root{
+    --corPadrao: steelblue;
+    --corpalavra: #fff;
+}
+
 fieldset{
     border: 1px solid #969696;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     padding: 20px;
-}
-
-.margin{
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .campo{
@@ -20,8 +20,8 @@ fieldset{
 
 fieldset .btn{
     padding: 5px 20px;
-    background-color: steelblue;
-    color: #fff;
+    background-color: var(--corPadrao);
+    color: var(--corpalavra);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

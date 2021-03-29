@@ -47,33 +47,39 @@
             </nav>
         </header>
 
+        <!-- dark mode -->
+        <input type="checkbox" id="ativar-dark">
+        <label class="lbl-dark" for="ativar-dark"><span></span></label>
+        
         <div class="banner">
             <img src="_img/banner-desktop2.jpeg"  alt="banner" class="img-responsivo">
         </div>
 
-        <div class="row margin">
-            <form action="" method="post">
-                <fieldset class="conteiner">
-                    <legend><span class="titulo">DADOS PESSOAIS</span></legend>
-                    
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" class="campo" maxlength="40" required autofocus><br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" class="campo" maxlength="50" required><br><br>
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone" class="campo" maxlenght="15" required><br><br>
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" name="endereco" id="endereco" class="campo" maxlength="40" required><br><br>
+        <div class="fundo dark"> 
+            <div class="row padding">
+                <form action="" method="post">
+                    <fieldset class="conteiner">
+                        <legend><span class="titulo">DADOS PESSOAIS</span></legend>
+                        
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" class="campo" maxlength="40" required autofocus><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" class="campo" maxlength="50" required><br><br>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" class="campo" maxlenght="15" required><br><br>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" class="campo" maxlength="40" required><br><br>
 
-                    <button type="submit" class="btn">Enviar</button>
-                    <button type="reset" class="btn">Limpar</button>
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Limpar</button>
 
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
         </div>
 
         <!-- rodape -->
-        <footer class="top">
+        <footer>
             <div class="flex-footer conteiner">
                 <div class="footer-item">
                     <p><span style="font-size:1.5em;">Curso HTML5 e CSS3</span><br>Levi Alves</p>
